@@ -1,0 +1,85 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+18
+1136
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+fullAdder
+# storage
+db|somador4Bits.(1).cnf
+db|somador4Bits.(1).cnf
+# case_insensitive
+# source_file
+fullAdder.bdf
+789344fc0e962fe17b3e79b1289296a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+fullAdder:inst4
+fullAdder:inst5
+fullAdder:inst6
+fullAdder:inst7
+}
+# macro_sequence
+
+# end
+# entity
+7447
+# storage
+db|somador4Bits.(2).cnf
+db|somador4Bits.(2).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp2|quartus|libraries|others|maxplus2|7447.bdf
+b866247e9e4e23608138281b57c7e83
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+7447:inst11
+}
+# macro_sequence
+
+# end
+# entity
+somador4Bits
+# storage
+db|somador4Bits.(0).cnf
+db|somador4Bits.(0).cnf
+# case_insensitive
+# source_file
+somador4Bits.bdf
+b9cb1b3eba6488ef58ba21f93b3dff1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

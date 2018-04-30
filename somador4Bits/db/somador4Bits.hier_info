@@ -1,0 +1,102 @@
+|somador4Bits
+Cout3 <= fullAdder:inst4.Cout
+A[0] => fullAdder:inst7.A
+A[1] => fullAdder:inst6.A
+A[2] => fullAdder:inst5.A
+A[3] => fullAdder:inst4.A
+Add/Sub => inst.IN0
+Add/Sub => inst1.IN0
+Add/Sub => inst2.IN0
+Add/Sub => inst3.IN0
+Add/Sub => fullAdder:inst7.Cin
+B[0] => inst3.IN1
+B[1] => inst2.IN1
+B[2] => inst1.IN1
+B[3] => inst.IN1
+OA <= 7447:inst11.OA
+OB <= 7447:inst11.OB
+OC <= 7447:inst11.OC
+OD <= 7447:inst11.OD
+OE <= 7447:inst11.OE
+OF <= 7447:inst11.OF
+OG <= 7447:inst11.OG
+
+
+|somador4Bits|fullAdder:inst4
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => ACin.IN0
+A => AB.IN0
+B => inst10.IN0
+B => BCin.IN0
+B => AB.IN1
+Cin => inst10.IN1
+Cin => ACin.IN1
+Cin => BCin.IN1
+Cout <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4Bits|fullAdder:inst5
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => ACin.IN0
+A => AB.IN0
+B => inst10.IN0
+B => BCin.IN0
+B => AB.IN1
+Cin => inst10.IN1
+Cin => ACin.IN1
+Cin => BCin.IN1
+Cout <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4Bits|fullAdder:inst6
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => ACin.IN0
+A => AB.IN0
+B => inst10.IN0
+B => BCin.IN0
+B => AB.IN1
+Cin => inst10.IN1
+Cin => ACin.IN1
+Cin => BCin.IN1
+Cout <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4Bits|fullAdder:inst7
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => ACin.IN0
+A => AB.IN0
+B => inst10.IN0
+B => BCin.IN0
+B => AB.IN1
+Cin => inst10.IN1
+Cin => ACin.IN1
+Cin => BCin.IN1
+Cout <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4Bits|7447:inst11
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
