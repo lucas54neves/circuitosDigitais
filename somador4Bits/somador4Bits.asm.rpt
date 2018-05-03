@@ -1,5 +1,5 @@
 Assembler report for somador4Bits
-Thu Apr 26 09:38:17 2018
+Thu May 03 09:16:11 2018
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: F:/somador4Bits/somador4Bits.sof
-  6. Assembler Device Options: F:/somador4Bits/somador4Bits.pof
+  5. Assembler Device Options: F:/gcc113-digitais/somador4Bits/somador4Bits.sof
+  6. Assembler Device Options: F:/gcc113-digitais/somador4Bits/somador4Bits.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Apr 26 09:38:17 2018 ;
+; Assembler Status      ; Successful - Thu May 03 09:16:11 2018 ;
 ; Revision Name         ; somador4Bits                          ;
 ; Top-level Entity Name ; somador4Bits                          ;
 ; Family                ; FLEX10K                               ;
@@ -74,37 +74,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+----------------------------------+
-; Assembler Generated Files        ;
-+----------------------------------+
-; File Name                        ;
-+----------------------------------+
-; F:/somador4Bits/somador4Bits.sof ;
-; F:/somador4Bits/somador4Bits.pof ;
-+----------------------------------+
++--------------------------------------------------+
+; Assembler Generated Files                        ;
++--------------------------------------------------+
+; File Name                                        ;
++--------------------------------------------------+
+; F:/gcc113-digitais/somador4Bits/somador4Bits.sof ;
+; F:/gcc113-digitais/somador4Bits/somador4Bits.pof ;
++--------------------------------------------------+
 
 
-+------------------------------------------------------------+
-; Assembler Device Options: F:/somador4Bits/somador4Bits.sof ;
-+----------------+-------------------------------------------+
-; Option         ; Setting                                   ;
-+----------------+-------------------------------------------+
-; Device         ; EPF10K20RC240-4                           ;
-; JTAG usercode  ; 0x0000007F                                ;
-; Checksum       ; 0x00009DE4                                ;
-+----------------+-------------------------------------------+
++----------------------------------------------------------------------------+
+; Assembler Device Options: F:/gcc113-digitais/somador4Bits/somador4Bits.sof ;
++----------------+-----------------------------------------------------------+
+; Option         ; Setting                                                   ;
++----------------+-----------------------------------------------------------+
+; Device         ; EPF10K20RC240-4                                           ;
+; JTAG usercode  ; 0x0000007F                                                ;
+; Checksum       ; 0x0000A02E                                                ;
++----------------+-----------------------------------------------------------+
 
 
-+------------------------------------------------------------+
-; Assembler Device Options: F:/somador4Bits/somador4Bits.pof ;
-+--------------------+---------------------------------------+
-; Option             ; Setting                               ;
-+--------------------+---------------------------------------+
-; Device             ; EPC2                                  ;
-; JTAG usercode      ; 0x00000000                            ;
-; Checksum           ; 0x02CC6940                            ;
-; Compression Ratio  ; 1                                     ;
-+--------------------+---------------------------------------+
++----------------------------------------------------------------------------+
+; Assembler Device Options: F:/gcc113-digitais/somador4Bits/somador4Bits.pof ;
++--------------------+-------------------------------------------------------+
+; Option             ; Setting                                               ;
++--------------------+-------------------------------------------------------+
+; Device             ; EPC2                                                  ;
+; JTAG usercode      ; 0x00000000                                            ;
+; Checksum           ; 0x02CC527F                                            ;
+; Compression Ratio  ; 1                                                     ;
++--------------------+-------------------------------------------------------+
 
 
 +--------------------+
@@ -113,13 +113,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 26 09:38:17 2018
+    Info: Processing started: Thu May 03 09:16:10 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off somador4Bits -c somador4Bits
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 259 megabytes
-    Info: Processing ended: Thu Apr 26 09:38:17 2018
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Thu May 03 09:16:12 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -1,5 +1,5 @@
 Fitter report for somador4Bits
-Thu Apr 26 09:38:15 2018
+Thu May 03 09:16:09 2018
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -51,7 +51,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------+
 ; Fitter Summary                                                       ;
 +-----------------------+----------------------------------------------+
-; Fitter Status         ; Successful - Thu Apr 26 09:38:15 2018        ;
+; Fitter Status         ; Successful - Thu May 03 09:16:09 2018        ;
 ; Quartus II Version    ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name         ; somador4Bits                                 ;
 ; Top-level Entity Name ; somador4Bits                                 ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 ; Device                ; EPF10K20RC240-4                              ;
 ; Timing Models         ; Final                                        ;
 ; Total logic elements  ; 15 / 1,152 ( 1 % )                           ;
-; Total pins            ; 17 / 189 ( 9 % )                             ;
+; Total pins            ; 24 / 189 ( 13 % )                            ;
 ; Total memory bits     ; 0 / 12,288 ( 0 % )                           ;
 +-----------------------+----------------------------------------------+
 
@@ -146,14 +146,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------+-------+-----+------+--------------+--------------------------+---------------+----------------+---------------+---------------+------------+---------------+--------------+
 ; Name  ; Pin # ; Row ; Col. ; I/O Register ; Use Local Routing Output ; Power Up High ; Slow Slew Rate ; Single-Pin OE ; Single-Pin CE ; Open Drain ; TRI Primitive ; I/O Standard ;
 +-------+-------+-----+------+--------------+--------------------------+---------------+----------------+---------------+---------------+------------+---------------+--------------+
-; Cout3 ; 31    ;  D  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
-; OA    ; 17    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
-; OB    ; 18    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
-; OC    ; 19    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
-; OD    ; 20    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
-; OE    ; 21    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
-; OF    ; 23    ;  C  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
-; OG    ; 24    ;  C  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; Cout3 ; 149   ;  D  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OG1   ; 13    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OA2   ; 17    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OB2   ; 18    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OC2   ; 19    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OD2   ; 20    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OE2   ; 21    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OF2   ; 23    ;  C  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OG2   ; 24    ;  C  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OA1   ; 6     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OB1   ; 7     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OC1   ; 8     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OD1   ; 9     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OE1   ; 11    ;  A  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; OF1   ; 12    ;  A  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
 +-------+-------+-----+------+--------------+--------------------------+---------------+----------------+---------------+---------------+------------+---------------+--------------+
 
 
@@ -167,32 +174,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; 3     ; ^nCEO      ;              ;
 ; 4     ; #TDO       ;              ;
 ; 5     ; VCC_INT    ;              ;
-; 6     ; GND*       ;              ;
-; 7     ; GND*       ;              ;
-; 8     ; GND*       ;              ;
-; 9     ; GND*       ;              ;
+; 6     ; OA1        ; TTL          ;
+; 7     ; OB1        ; TTL          ;
+; 8     ; OC1        ; TTL          ;
+; 9     ; OD1        ; TTL          ;
 ; 10    ; GND_INT    ;              ;
-; 11    ; GND*       ;              ;
-; 12    ; GND*       ;              ;
-; 13    ; GND*       ;              ;
+; 11    ; OE1        ; TTL          ;
+; 12    ; OF1        ; TTL          ;
+; 13    ; OG1        ; TTL          ;
 ; 14    ; GND*       ;              ;
 ; 15    ; GND*       ;              ;
 ; 16    ; VCC_INT    ;              ;
-; 17    ; OA         ; TTL          ;
-; 18    ; OB         ; TTL          ;
-; 19    ; OC         ; TTL          ;
-; 20    ; OD         ; TTL          ;
-; 21    ; OE         ; TTL          ;
+; 17    ; OA2        ; TTL          ;
+; 18    ; OB2        ; TTL          ;
+; 19    ; OC2        ; TTL          ;
+; 20    ; OD2        ; TTL          ;
+; 21    ; OE2        ; TTL          ;
 ; 22    ; GND_INT    ;              ;
-; 23    ; OF         ; TTL          ;
-; 24    ; OG         ; TTL          ;
+; 23    ; OF2        ; TTL          ;
+; 24    ; OG2        ; TTL          ;
 ; 25    ; GND*       ;              ;
 ; 26    ; GND*       ;              ;
 ; 27    ; VCC_INT    ;              ;
 ; 28    ; GND*       ;              ;
 ; 29    ; Add/Sub    ; TTL          ;
 ; 30    ; GND*       ;              ;
-; 31    ; Cout3      ; TTL          ;
+; 31    ; GND*       ;              ;
 ; 32    ; GND_INT    ;              ;
 ; 33    ; B[0]       ; TTL          ;
 ; 34    ; B[1]       ; TTL          ;
@@ -310,7 +317,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; 146   ; GND*       ;              ;
 ; 147   ; GND*       ;              ;
 ; 148   ; GND*       ;              ;
-; 149   ; GND*       ;              ;
+; 149   ; Cout3      ; TTL          ;
 ; 150   ; VCC_INT    ;              ;
 ; 151   ; GND*       ;              ;
 ; 152   ; GND*       ;              ;
@@ -405,36 +412,36 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------+------------+--------------+
 
 
-+------------------------------------+
-; Non-Global High Fan-Out Signals    ;
-+--------------------------+---------+
-; Name                     ; Fan-Out ;
-+--------------------------+---------+
-; fullAdder:inst5|inst~0   ; 7       ;
-; fullAdder:inst6|inst~0   ; 7       ;
-; Add/Sub                  ; 7       ;
-; fullAdder:inst4|inst~0   ; 5       ;
-; fullAdder:inst7|inst~0   ; 5       ;
-; B[0]                     ; 4       ;
-; A[0]                     ; 4       ;
-; A[1]                     ; 2       ;
-; fullAdder:inst6|inst12~1 ; 2       ;
-; fullAdder:inst5|inst12~1 ; 2       ;
-; B[3]                     ; 2       ;
-; B[1]                     ; 2       ;
-; A[2]                     ; 2       ;
-; fullAdder:inst7|inst12~1 ; 2       ;
-; B[2]                     ; 2       ;
-; A[3]                     ; 2       ;
-; fullAdder:inst4|inst12~1 ; 1       ;
-; 7447:inst11|86~1         ; 1       ;
-; 7447:inst11|83~0         ; 1       ;
-; 7447:inst11|82~1         ; 1       ;
-; 7447:inst11|81~1         ; 1       ;
-; 7447:inst11|84~1         ; 1       ;
-; 7447:inst11|85~0         ; 1       ;
-; 7447:inst11|87~0         ; 1       ;
-+--------------------------+---------+
++--------------------------------------+
+; Non-Global High Fan-Out Signals      ;
++----------------------------+---------+
+; Name                       ; Fan-Out ;
++----------------------------+---------+
+; fullAdder:inst5|inst~0     ; 7       ;
+; fullAdder:inst6|inst~0     ; 7       ;
+; Add/Sub                    ; 7       ;
+; fullAdder:inst4|inst~0     ; 6       ;
+; fullAdder:inst7|inst~0     ; 5       ;
+; B[0]                       ; 4       ;
+; A[0]                       ; 4       ;
+; A[1]                       ; 2       ;
+; fullAdder:inst6|inst12~1   ; 2       ;
+; fullAdder:inst5|inst12~1   ; 2       ;
+; B[3]                       ; 2       ;
+; B[1]                       ; 2       ;
+; A[2]                       ; 2       ;
+; fullAdder:inst7|inst12~1   ; 2       ;
+; B[2]                       ; 2       ;
+; A[3]                       ; 2       ;
+; fullAdder:inst4|inst12~1   ; 1       ;
+; decodificador:inst8|Mux6~1 ; 1       ;
+; decodificador:inst8|Mux4~1 ; 1       ;
+; decodificador:inst8|Mux0~1 ; 1       ;
+; decodificador:inst8|Mux1~1 ; 1       ;
+; decodificador:inst8|Mux2~1 ; 1       ;
+; decodificador:inst8|Mux5~1 ; 1       ;
+; decodificador:inst8|Mux3~1 ; 1       ;
++----------------------------+---------+
 
 
 +-------------------------------------------+
@@ -489,12 +496,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Row   ; Interconnect Used ; Left Half Interconnect Used ; Right Half Interconnect Used ;
 +-------+-------------------+-----------------------------+------------------------------+
 ;  A    ;  0 / 96 ( 0 % )   ;  0 / 48 ( 0 % )             ;  0 / 48 ( 0 % )              ;
-;  B    ;  0 / 96 ( 0 % )   ;  0 / 48 ( 0 % )             ;  5 / 48 ( 10 % )             ;
+;  B    ;  1 / 96 ( 1 % )   ;  0 / 48 ( 0 % )             ;  9 / 48 ( 19 % )             ;
 ;  C    ;  1 / 96 ( 1 % )   ;  0 / 48 ( 0 % )             ;  2 / 48 ( 4 % )              ;
-;  D    ;  7 / 96 ( 7 % )   ;  0 / 48 ( 0 % )             ;  6 / 48 ( 13 % )             ;
+;  D    ;  7 / 96 ( 7 % )   ;  0 / 48 ( 0 % )             ;  3 / 48 ( 6 % )              ;
 ;  E    ;  2 / 96 ( 2 % )   ;  0 / 48 ( 0 % )             ;  0 / 48 ( 0 % )              ;
 ;  F    ;  0 / 96 ( 0 % )   ;  0 / 48 ( 0 % )             ;  0 / 48 ( 0 % )              ;
-; Total ;  10 / 576 ( 2 % ) ;  0 / 288 ( 0 % )            ;  13 / 288 ( 5 % )            ;
+; Total ;  11 / 576 ( 2 % ) ;  0 / 288 ( 0 % )            ;  14 / 288 ( 5 % )            ;
 +-------+-------------------+-----------------------------+------------------------------+
 
 
@@ -519,13 +526,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; 14    ;  0 / 24 ( 0 % )   ;
 ; 15    ;  0 / 24 ( 0 % )   ;
 ; 16    ;  0 / 24 ( 0 % )   ;
-; 17    ;  6 / 24 ( 25 % )  ;
-; 18    ;  1 / 24 ( 4 % )   ;
-; 19    ;  0 / 24 ( 0 % )   ;
-; 20    ;  1 / 24 ( 4 % )   ;
+; 17    ;  0 / 24 ( 0 % )   ;
+; 18    ;  0 / 24 ( 0 % )   ;
+; 19    ;  5 / 24 ( 21 % )  ;
+; 20    ;  2 / 24 ( 8 % )   ;
 ; 21    ;  0 / 24 ( 0 % )   ;
 ; 22    ;  0 / 24 ( 0 % )   ;
-; 23    ;  1 / 24 ( 4 % )   ;
+; 23    ;  2 / 24 ( 8 % )   ;
 ; 24    ;  1 / 24 ( 4 % )   ;
 ; Total ;  10 / 576 ( 2 % ) ;
 +-------+-------------------+
@@ -550,9 +557,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Registers                         ; 0 / 1,152 ( 0 % )    ;
 ; Logic elements in carry chains    ; 0                    ;
 ; User inserted logic elements      ; 0                    ;
-; I/O pins                          ; 17 / 189 ( 9 % )     ;
-;     -- Clock pins                 ; 0 / 2 ( 0 % )        ;
-;     -- Dedicated input pins       ; 0 / 4 ( 0 % )        ;
+; I/O pins                          ; 24 / 189 ( 13 % )    ;
+;     -- Clock pins                 ; 2 / 2 ( 100 % )      ;
+;     -- Dedicated input pins       ; 2 / 4 ( 50 % )       ;
 ; Global signals                    ; 0                    ;
 ; EABs                              ; 0 / 6 ( 0 % )        ;
 ; Total memory bits                 ; 0 / 12,288 ( 0 % )   ;
@@ -561,23 +568,23 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Maximum fan-out                   ; 7                    ;
 ; Highest non-global fan-out signal ; fullAdder:inst6|inst ;
 ; Highest non-global fan-out        ; 7                    ;
-; Total fan-out                     ; 65                   ;
-; Average fan-out                   ; 2.03                 ;
+; Total fan-out                     ; 66                   ;
+; Average fan-out                   ; 1.69                 ;
 +-----------------------------------+----------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                            ;
-+----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name           ; Library Name ;
-+----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+
-; |somador4Bits              ; 15 (0)      ; 0            ; 0           ; 17   ; 15 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits                 ; work         ;
-;    |7447:inst11|           ; 7 (7)       ; 0            ; 0           ; 0    ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|7447:inst11     ; work         ;
-;    |fullAdder:inst4|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst4 ; work         ;
-;    |fullAdder:inst5|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst5 ; work         ;
-;    |fullAdder:inst6|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst6 ; work         ;
-;    |fullAdder:inst7|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst7 ; work         ;
-+----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name               ; Library Name ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------+--------------+
+; |somador4Bits              ; 15 (0)      ; 0            ; 0           ; 24   ; 15 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits                     ; work         ;
+;    |decodificador:inst8|   ; 7 (7)       ; 0            ; 0           ; 0    ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|decodificador:inst8 ; work         ;
+;    |fullAdder:inst4|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst4     ; work         ;
+;    |fullAdder:inst5|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst5     ; work         ;
+;    |fullAdder:inst6|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst6     ; work         ;
+;    |fullAdder:inst7|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst7     ; work         ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -596,20 +603,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; B[2]    ; Input    ; OFF         ;
 ; B[3]    ; Input    ; OFF         ;
 ; Cout3   ; Output   ; OFF         ;
-; OA      ; Output   ; OFF         ;
-; OB      ; Output   ; OFF         ;
-; OC      ; Output   ; OFF         ;
-; OD      ; Output   ; OFF         ;
-; OE      ; Output   ; OFF         ;
-; OF      ; Output   ; OFF         ;
-; OG      ; Output   ; OFF         ;
+; OA1     ; Output   ; OFF         ;
+; OB1     ; Output   ; OFF         ;
+; OC1     ; Output   ; OFF         ;
+; OD1     ; Output   ; OFF         ;
+; OE1     ; Output   ; OFF         ;
+; OF1     ; Output   ; OFF         ;
+; OG1     ; Output   ; OFF         ;
+; OA2     ; Output   ; OFF         ;
+; OB2     ; Output   ; OFF         ;
+; OC2     ; Output   ; OFF         ;
+; OD2     ; Output   ; OFF         ;
+; OE2     ; Output   ; OFF         ;
+; OF2     ; Output   ; OFF         ;
+; OG2     ; Output   ; OFF         ;
 +---------+----------+-------------+
 
 
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in F:/somador4Bits/somador4Bits.pin.
+The pin-out file can be found in F:/gcc113-digitais/somador4Bits/somador4Bits.pin.
 
 
 +-----------------+
@@ -618,7 +632,7 @@ The pin-out file can be found in F:/somador4Bits/somador4Bits.pin.
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 26 09:38:14 2018
+    Info: Processing started: Thu May 03 09:16:07 2018
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off somador4Bits -c somador4Bits
 Info: Selected device EPF10K20RC240-4 for design "somador4Bits"
 Info: Fitter is using the Classic Timing Analyzer
@@ -628,7 +642,7 @@ Info: Timing requirements not specified -- optimizing circuit to achieve the fol
     Info: Not setting a global tco requirement
     Info: Not setting a global tpd requirement
 Info: Inserted 0 logic cells in first fitting attempt
-Info: Started fitting attempt 1 on Thu Apr 26 2018 at 09:38:15
+Info: Started fitting attempt 1 on Thu May 03 2018 at 09:16:08
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
@@ -637,7 +651,7 @@ Info: Fitter routing operations beginning
 Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: Quartus II Fitter was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 302 megabytes
-    Info: Processing ended: Thu Apr 26 09:38:16 2018
+    Info: Processing ended: Thu May 03 09:16:09 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

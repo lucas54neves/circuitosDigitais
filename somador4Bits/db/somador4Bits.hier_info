@@ -13,13 +13,20 @@ B[0] => inst3.IN1
 B[1] => inst2.IN1
 B[2] => inst1.IN1
 B[3] => inst.IN1
-OA <= 7447:inst11.OA
-OB <= 7447:inst11.OB
-OC <= 7447:inst11.OC
-OD <= 7447:inst11.OD
-OE <= 7447:inst11.OE
-OF <= 7447:inst11.OF
-OG <= 7447:inst11.OG
+OA1 <= digit1[6].DB_MAX_OUTPUT_PORT_TYPE
+OB1 <= digit1[5].DB_MAX_OUTPUT_PORT_TYPE
+OC1 <= digit1[4].DB_MAX_OUTPUT_PORT_TYPE
+OD1 <= digit1[3].DB_MAX_OUTPUT_PORT_TYPE
+OE1 <= digit1[2].DB_MAX_OUTPUT_PORT_TYPE
+OF1 <= digit1[1].DB_MAX_OUTPUT_PORT_TYPE
+OG1 <= digit1[0].DB_MAX_OUTPUT_PORT_TYPE
+OA2 <= digit2[6].DB_MAX_OUTPUT_PORT_TYPE
+OB2 <= digit2[5].DB_MAX_OUTPUT_PORT_TYPE
+OC2 <= digit2[4].DB_MAX_OUTPUT_PORT_TYPE
+OD2 <= digit2[3].DB_MAX_OUTPUT_PORT_TYPE
+OE2 <= digit2[2].DB_MAX_OUTPUT_PORT_TYPE
+OF2 <= digit2[1].DB_MAX_OUTPUT_PORT_TYPE
+OG2 <= digit2[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |somador4Bits|fullAdder:inst4
@@ -78,25 +85,47 @@ Cin => BCin.IN1
 Cout <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|somador4Bits|7447:inst11
-OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
-C => 25.IN0
-LTN => 25.IN1
-LTN => 27.IN1
-LTN => 29.IN1
-LTN => 13.IN5
-LTN => 38.IN3
-BIN => 37.IN0
-B => 27.IN0
-D => 14.IN0
-A => 29.IN0
-RBIN => 15.IN0
-OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
-OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
-RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
-OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
-OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
-OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
-OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+|somador4Bits|decodificador:inst8
+signed_int[0] => Mux6.IN19
+signed_int[0] => Mux5.IN19
+signed_int[0] => Mux4.IN10
+signed_int[0] => Mux3.IN10
+signed_int[0] => Mux2.IN19
+signed_int[0] => Mux1.IN19
+signed_int[0] => Mux0.IN19
+signed_int[1] => Mux6.IN18
+signed_int[1] => Mux5.IN18
+signed_int[1] => Mux4.IN9
+signed_int[1] => Mux3.IN9
+signed_int[1] => Mux2.IN18
+signed_int[1] => Mux1.IN18
+signed_int[1] => Mux0.IN18
+signed_int[2] => Mux6.IN17
+signed_int[2] => Mux5.IN17
+signed_int[2] => Mux4.IN8
+signed_int[2] => Mux3.IN8
+signed_int[2] => Mux2.IN17
+signed_int[2] => Mux1.IN17
+signed_int[2] => Mux0.IN17
+signed_int[3] => Mux6.IN16
+signed_int[3] => Mux5.IN16
+signed_int[3] => Mux2.IN16
+signed_int[3] => Mux1.IN16
+signed_int[3] => Mux0.IN16
+signed_int[3] => digit1[0].DATAIN
+digit1[0] <= signed_int[3].DB_MAX_OUTPUT_PORT_TYPE
+digit1[1] <= <VCC>
+digit1[2] <= <VCC>
+digit1[3] <= <VCC>
+digit1[4] <= <VCC>
+digit1[5] <= <VCC>
+digit1[6] <= <VCC>
+digit2[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+digit2[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+digit2[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+digit2[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+digit2[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+digit2[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+digit2[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

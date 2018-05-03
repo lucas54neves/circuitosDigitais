@@ -48,12 +48,9 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name BDF_FILE fullAdder.bdf
-set_global_assignment -name BDF_FILE somador4Bits.bdf
 set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name OPTIMIZE_HOLD_TIMING "IO PATHS AND MINIMUM TPD PATHS"
 set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
-set_global_assignment -name VECTOR_WAVEFORM_FILE somador4Bits.vwf
 set_global_assignment -name FLEX10K_DEVICE_IO_STANDARD TTL
 set_location_assignment PIN_41 -to A[3]
 set_location_assignment PIN_40 -to A[2]
@@ -65,10 +62,22 @@ set_location_assignment PIN_34 -to B[1]
 set_location_assignment PIN_33 -to B[0]
 set_location_assignment PIN_29 -to Add/Sub
 set_global_assignment -name MISC_FILE "F:/somador4Bits/somador4Bits.dpf"
-set_location_assignment PIN_17 -to OA
-set_location_assignment PIN_18 -to OB
-set_location_assignment PIN_19 -to OC
-set_location_assignment PIN_20 -to OD
-set_location_assignment PIN_21 -to OE
-set_location_assignment PIN_23 -to OF
-set_location_assignment PIN_24 -to OG
+set_global_assignment -name VHDL_FILE decodificador.vhd
+set_global_assignment -name BDF_FILE fullAdder.bdf
+set_global_assignment -name BDF_FILE somador4Bits.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE somador4Bits.vwf
+set_global_assignment -name MISC_FILE "F:/gcc113-digitais/somador4Bits/somador4Bits.dpf"
+set_location_assignment PIN_6 -to OA1
+set_location_assignment PIN_7 -to OB1
+set_location_assignment PIN_8 -to OC1
+set_location_assignment PIN_9 -to OD1
+set_location_assignment PIN_11 -to OE1
+set_location_assignment PIN_12 -to OF1
+set_location_assignment PIN_13 -to OG1
+set_location_assignment PIN_17 -to OA2
+set_location_assignment PIN_18 -to OB2
+set_location_assignment PIN_19 -to OC2
+set_location_assignment PIN_20 -to OD2
+set_location_assignment PIN_21 -to OE2
+set_location_assignment PIN_23 -to OF2
+set_location_assignment PIN_24 -to OG2

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for somador4Bits
-Thu Apr 26 09:38:13 2018
+Thu May 03 09:16:06 2018
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -39,13 +39,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Apr 26 09:38:13 2018        ;
+; Analysis & Synthesis Status ; Successful - Thu May 03 09:16:06 2018        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; somador4Bits                                 ;
 ; Top-level Entity Name       ; somador4Bits                                 ;
 ; Family                      ; FLEX10K                                      ;
 ; Total logic elements        ; 15                                           ;
-; Total pins                  ; 17                                           ;
+; Total pins                  ; 24                                           ;
 ; Total memory bits           ; 0                                            ;
 +-----------------------------+----------------------------------------------+
 
@@ -112,15 +112,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------+-----------------+---------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                               ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
-; fullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; F:/somador4Bits/fullAdder.bdf                              ;
-; somador4Bits.bdf                 ; yes             ; User Block Diagram/Schematic File  ; F:/somador4Bits/somador4Bits.bdf                           ;
-; 7447.bdf                         ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/others/maxplus2/7447.bdf ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                      ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------+
+; decodificador.vhd                ; yes             ; User VHDL File                     ; F:/gcc113-digitais/somador4Bits/decodificador.vhd ;
+; fullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; F:/gcc113-digitais/somador4Bits/fullAdder.bdf     ;
+; somador4Bits.bdf                 ; yes             ; User Block Diagram/Schematic File  ; F:/gcc113-digitais/somador4Bits/somador4Bits.bdf  ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -136,26 +136,26 @@ applicable agreement for further details.
 ;     -- Total 1-input functions ; 0                    ;
 ;     -- Total 0-input functions ; 0                    ;
 ; Total registers                ; 0                    ;
-; I/O pins                       ; 17                   ;
+; I/O pins                       ; 24                   ;
 ; Maximum fan-out node           ; fullAdder:inst6|inst ;
 ; Maximum fan-out                ; 7                    ;
-; Total fan-out                  ; 65                   ;
-; Average fan-out                ; 2.03                 ;
+; Total fan-out                  ; 66                   ;
+; Average fan-out                ; 1.69                 ;
 +--------------------------------+----------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
-+----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name           ; Library Name ;
-+----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+
-; |somador4Bits              ; 15 (0)      ; 0            ; 0           ; 17   ; 15 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits                 ; work         ;
-;    |7447:inst11|           ; 7 (7)       ; 0            ; 0           ; 0    ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|7447:inst11     ; work         ;
-;    |fullAdder:inst4|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst4 ; work         ;
-;    |fullAdder:inst5|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst5 ; work         ;
-;    |fullAdder:inst6|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst6 ; work         ;
-;    |fullAdder:inst7|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst7 ; work         ;
-+----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name               ; Library Name ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------+--------------+
+; |somador4Bits              ; 15 (0)      ; 0            ; 0           ; 24   ; 15 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits                     ; work         ;
+;    |decodificador:inst8|   ; 7 (7)       ; 0            ; 0           ; 0    ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|decodificador:inst8 ; work         ;
+;    |fullAdder:inst4|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst4     ; work         ;
+;    |fullAdder:inst5|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst5     ; work         ;
+;    |fullAdder:inst6|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst6     ; work         ;
+;    |fullAdder:inst7|       ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |somador4Bits|fullAdder:inst7     ; work         ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -180,24 +180,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 26 09:38:09 2018
+    Info: Processing started: Thu May 03 09:16:03 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off somador4Bits -c somador4Bits
+Info: Found 2 design units, including 1 entities, in source file decodificador.vhd
+    Info: Found design unit 1: decodificador-behavioral
+    Info: Found entity 1: decodificador
 Info: Found 1 design units, including 1 entities, in source file fullAdder.bdf
     Info: Found entity 1: fullAdder
 Info: Found 1 design units, including 1 entities, in source file somador4Bits.bdf
     Info: Found entity 1: somador4Bits
 Info: Elaborating entity "somador4Bits" for the top level hierarchy
 Info: Elaborating entity "fullAdder" for hierarchy "fullAdder:inst4"
-Info: Elaborating entity "7447" for hierarchy "7447:inst11"
-Info: Elaborated megafunction instantiation "7447:inst11"
-Info: Implemented 32 device resources after synthesis - the final resource count might be different
+Info: Elaborating entity "decodificador" for hierarchy "decodificador:inst8"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "OA1" is stuck at VCC
+    Warning (13410): Pin "OB1" is stuck at VCC
+    Warning (13410): Pin "OC1" is stuck at VCC
+    Warning (13410): Pin "OD1" is stuck at VCC
+    Warning (13410): Pin "OE1" is stuck at VCC
+    Warning (13410): Pin "OF1" is stuck at VCC
+Info: Implemented 39 device resources after synthesis - the final resource count might be different
     Info: Implemented 9 input pins
-    Info: Implemented 8 output pins
+    Info: Implemented 15 output pins
     Info: Implemented 15 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 275 megabytes
-    Info: Processing ended: Thu Apr 26 09:38:13 2018
-    Info: Elapsed time: 00:00:04
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 294 megabytes
+    Info: Processing ended: Thu May 03 09:16:06 2018
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
 

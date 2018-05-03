@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for somador4Bits
-Thu Apr 26 09:38:19 2018
+Thu May 03 09:16:13 2018
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -34,14 +34,14 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                  ;
-+------------------------------+-------+---------------+-------------+---------+----+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From    ; To ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+---------+----+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 32.800 ns   ; Add/Sub ; OA ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;         ;    ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+---------+----+------------+----------+--------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                   ;
++------------------------------+-------+---------------+-------------+---------+-----+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From    ; To  ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+---------+-----+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 33.300 ns   ; Add/Sub ; OF2 ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;         ;     ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+---------+-----+------------+----------+--------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -90,74 +90,83 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------+-------------------+-----------------+---------+-------+
 ; Slack ; Required P2P Time ; Actual P2P Time ; From    ; To    ;
 +-------+-------------------+-----------------+---------+-------+
-; N/A   ; None              ; 32.800 ns       ; Add/Sub ; OC    ;
-; N/A   ; None              ; 32.800 ns       ; Add/Sub ; OB    ;
-; N/A   ; None              ; 32.800 ns       ; Add/Sub ; OA    ;
-; N/A   ; None              ; 32.700 ns       ; Add/Sub ; OF    ;
-; N/A   ; None              ; 32.200 ns       ; Add/Sub ; OG    ;
-; N/A   ; None              ; 30.000 ns       ; Add/Sub ; OE    ;
-; N/A   ; None              ; 30.000 ns       ; Add/Sub ; OD    ;
-; N/A   ; None              ; 29.800 ns       ; A[0]    ; OC    ;
-; N/A   ; None              ; 29.800 ns       ; A[0]    ; OB    ;
-; N/A   ; None              ; 29.800 ns       ; A[0]    ; OA    ;
-; N/A   ; None              ; 29.700 ns       ; A[0]    ; OF    ;
-; N/A   ; None              ; 29.300 ns       ; B[0]    ; OC    ;
-; N/A   ; None              ; 29.300 ns       ; B[0]    ; OB    ;
-; N/A   ; None              ; 29.300 ns       ; B[0]    ; OA    ;
-; N/A   ; None              ; 29.200 ns       ; A[0]    ; OG    ;
-; N/A   ; None              ; 29.200 ns       ; B[0]    ; OF    ;
-; N/A   ; None              ; 28.700 ns       ; B[0]    ; OG    ;
-; N/A   ; None              ; 27.100 ns       ; Add/Sub ; Cout3 ;
-; N/A   ; None              ; 27.000 ns       ; A[0]    ; OE    ;
-; N/A   ; None              ; 27.000 ns       ; A[0]    ; OD    ;
-; N/A   ; None              ; 26.800 ns       ; A[2]    ; OC    ;
-; N/A   ; None              ; 26.800 ns       ; A[2]    ; OB    ;
-; N/A   ; None              ; 26.800 ns       ; A[2]    ; OA    ;
-; N/A   ; None              ; 26.700 ns       ; A[2]    ; OF    ;
-; N/A   ; None              ; 26.600 ns       ; A[1]    ; OC    ;
-; N/A   ; None              ; 26.600 ns       ; A[1]    ; OB    ;
-; N/A   ; None              ; 26.600 ns       ; A[1]    ; OA    ;
-; N/A   ; None              ; 26.500 ns       ; A[1]    ; OF    ;
-; N/A   ; None              ; 26.500 ns       ; B[0]    ; OE    ;
-; N/A   ; None              ; 26.500 ns       ; B[0]    ; OD    ;
-; N/A   ; None              ; 26.200 ns       ; A[2]    ; OG    ;
-; N/A   ; None              ; 26.100 ns       ; B[1]    ; OC    ;
-; N/A   ; None              ; 26.100 ns       ; B[1]    ; OB    ;
-; N/A   ; None              ; 26.100 ns       ; B[1]    ; OA    ;
-; N/A   ; None              ; 26.000 ns       ; A[1]    ; OG    ;
-; N/A   ; None              ; 26.000 ns       ; B[1]    ; OF    ;
-; N/A   ; None              ; 25.500 ns       ; B[1]    ; OG    ;
-; N/A   ; None              ; 24.100 ns       ; A[0]    ; Cout3 ;
-; N/A   ; None              ; 24.000 ns       ; A[2]    ; OE    ;
-; N/A   ; None              ; 24.000 ns       ; A[2]    ; OD    ;
-; N/A   ; None              ; 24.000 ns       ; A[3]    ; OC    ;
-; N/A   ; None              ; 24.000 ns       ; A[3]    ; OB    ;
-; N/A   ; None              ; 24.000 ns       ; A[3]    ; OA    ;
-; N/A   ; None              ; 23.900 ns       ; A[3]    ; OF    ;
-; N/A   ; None              ; 23.800 ns       ; A[1]    ; OE    ;
-; N/A   ; None              ; 23.800 ns       ; A[1]    ; OD    ;
-; N/A   ; None              ; 23.600 ns       ; B[0]    ; Cout3 ;
-; N/A   ; None              ; 23.400 ns       ; A[3]    ; OG    ;
-; N/A   ; None              ; 23.300 ns       ; B[1]    ; OE    ;
-; N/A   ; None              ; 23.300 ns       ; B[1]    ; OD    ;
-; N/A   ; None              ; 23.200 ns       ; B[2]    ; OC    ;
-; N/A   ; None              ; 23.200 ns       ; B[2]    ; OB    ;
-; N/A   ; None              ; 23.200 ns       ; B[2]    ; OA    ;
-; N/A   ; None              ; 23.100 ns       ; B[2]    ; OF    ;
-; N/A   ; None              ; 22.600 ns       ; B[2]    ; OG    ;
-; N/A   ; None              ; 21.100 ns       ; A[2]    ; Cout3 ;
-; N/A   ; None              ; 20.900 ns       ; A[1]    ; Cout3 ;
-; N/A   ; None              ; 20.400 ns       ; B[2]    ; OE    ;
-; N/A   ; None              ; 20.400 ns       ; B[2]    ; OD    ;
-; N/A   ; None              ; 20.400 ns       ; B[1]    ; Cout3 ;
-; N/A   ; None              ; 20.300 ns       ; B[3]    ; OC    ;
-; N/A   ; None              ; 20.300 ns       ; B[3]    ; OB    ;
-; N/A   ; None              ; 20.300 ns       ; B[3]    ; OA    ;
-; N/A   ; None              ; 20.200 ns       ; B[3]    ; OF    ;
-; N/A   ; None              ; 19.700 ns       ; B[3]    ; OG    ;
-; N/A   ; None              ; 18.300 ns       ; A[3]    ; Cout3 ;
-; N/A   ; None              ; 17.500 ns       ; B[2]    ; Cout3 ;
-; N/A   ; None              ; 14.600 ns       ; B[3]    ; Cout3 ;
+; N/A   ; None              ; 33.300 ns       ; Add/Sub ; OG2   ;
+; N/A   ; None              ; 33.300 ns       ; Add/Sub ; OF2   ;
+; N/A   ; None              ; 32.300 ns       ; Add/Sub ; OC2   ;
+; N/A   ; None              ; 32.300 ns       ; Add/Sub ; OB2   ;
+; N/A   ; None              ; 32.300 ns       ; Add/Sub ; OA2   ;
+; N/A   ; None              ; 30.200 ns       ; A[0]    ; OG2   ;
+; N/A   ; None              ; 30.200 ns       ; A[0]    ; OF2   ;
+; N/A   ; None              ; 30.000 ns       ; Add/Sub ; OE2   ;
+; N/A   ; None              ; 30.000 ns       ; Add/Sub ; OD2   ;
+; N/A   ; None              ; 29.700 ns       ; B[0]    ; OG2   ;
+; N/A   ; None              ; 29.700 ns       ; B[0]    ; OF2   ;
+; N/A   ; None              ; 29.200 ns       ; A[0]    ; OC2   ;
+; N/A   ; None              ; 29.200 ns       ; A[0]    ; OB2   ;
+; N/A   ; None              ; 29.200 ns       ; A[0]    ; OA2   ;
+; N/A   ; None              ; 28.700 ns       ; B[0]    ; OC2   ;
+; N/A   ; None              ; 28.700 ns       ; B[0]    ; OB2   ;
+; N/A   ; None              ; 28.700 ns       ; B[0]    ; OA2   ;
+; N/A   ; None              ; 28.300 ns       ; Add/Sub ; OG1   ;
+; N/A   ; None              ; 28.000 ns       ; Add/Sub ; Cout3 ;
+; N/A   ; None              ; 27.300 ns       ; A[2]    ; OG2   ;
+; N/A   ; None              ; 27.300 ns       ; A[2]    ; OF2   ;
+; N/A   ; None              ; 27.100 ns       ; A[1]    ; OG2   ;
+; N/A   ; None              ; 27.100 ns       ; A[1]    ; OF2   ;
+; N/A   ; None              ; 26.900 ns       ; A[0]    ; OE2   ;
+; N/A   ; None              ; 26.900 ns       ; A[0]    ; OD2   ;
+; N/A   ; None              ; 26.600 ns       ; B[1]    ; OG2   ;
+; N/A   ; None              ; 26.600 ns       ; B[1]    ; OF2   ;
+; N/A   ; None              ; 26.400 ns       ; B[0]    ; OE2   ;
+; N/A   ; None              ; 26.400 ns       ; B[0]    ; OD2   ;
+; N/A   ; None              ; 26.300 ns       ; A[2]    ; OC2   ;
+; N/A   ; None              ; 26.300 ns       ; A[2]    ; OB2   ;
+; N/A   ; None              ; 26.300 ns       ; A[2]    ; OA2   ;
+; N/A   ; None              ; 26.100 ns       ; A[1]    ; OC2   ;
+; N/A   ; None              ; 26.100 ns       ; A[1]    ; OB2   ;
+; N/A   ; None              ; 26.100 ns       ; A[1]    ; OA2   ;
+; N/A   ; None              ; 25.600 ns       ; B[1]    ; OC2   ;
+; N/A   ; None              ; 25.600 ns       ; B[1]    ; OB2   ;
+; N/A   ; None              ; 25.600 ns       ; B[1]    ; OA2   ;
+; N/A   ; None              ; 25.200 ns       ; A[0]    ; OG1   ;
+; N/A   ; None              ; 24.900 ns       ; A[0]    ; Cout3 ;
+; N/A   ; None              ; 24.700 ns       ; B[0]    ; OG1   ;
+; N/A   ; None              ; 24.500 ns       ; A[3]    ; OG2   ;
+; N/A   ; None              ; 24.500 ns       ; A[3]    ; OF2   ;
+; N/A   ; None              ; 24.400 ns       ; B[0]    ; Cout3 ;
+; N/A   ; None              ; 24.000 ns       ; A[2]    ; OE2   ;
+; N/A   ; None              ; 24.000 ns       ; A[2]    ; OD2   ;
+; N/A   ; None              ; 23.800 ns       ; A[1]    ; OE2   ;
+; N/A   ; None              ; 23.800 ns       ; A[1]    ; OD2   ;
+; N/A   ; None              ; 23.700 ns       ; B[2]    ; OG2   ;
+; N/A   ; None              ; 23.700 ns       ; B[2]    ; OF2   ;
+; N/A   ; None              ; 23.500 ns       ; A[3]    ; OC2   ;
+; N/A   ; None              ; 23.500 ns       ; A[3]    ; OB2   ;
+; N/A   ; None              ; 23.500 ns       ; A[3]    ; OA2   ;
+; N/A   ; None              ; 23.300 ns       ; B[1]    ; OE2   ;
+; N/A   ; None              ; 23.300 ns       ; B[1]    ; OD2   ;
+; N/A   ; None              ; 22.700 ns       ; B[2]    ; OC2   ;
+; N/A   ; None              ; 22.700 ns       ; B[2]    ; OB2   ;
+; N/A   ; None              ; 22.700 ns       ; B[2]    ; OA2   ;
+; N/A   ; None              ; 22.300 ns       ; A[2]    ; OG1   ;
+; N/A   ; None              ; 22.100 ns       ; A[1]    ; OG1   ;
+; N/A   ; None              ; 22.000 ns       ; A[2]    ; Cout3 ;
+; N/A   ; None              ; 21.800 ns       ; A[1]    ; Cout3 ;
+; N/A   ; None              ; 21.600 ns       ; B[1]    ; OG1   ;
+; N/A   ; None              ; 21.300 ns       ; B[1]    ; Cout3 ;
+; N/A   ; None              ; 20.800 ns       ; B[3]    ; OG2   ;
+; N/A   ; None              ; 20.800 ns       ; B[3]    ; OF2   ;
+; N/A   ; None              ; 20.400 ns       ; B[2]    ; OE2   ;
+; N/A   ; None              ; 20.400 ns       ; B[2]    ; OD2   ;
+; N/A   ; None              ; 19.800 ns       ; B[3]    ; OC2   ;
+; N/A   ; None              ; 19.800 ns       ; B[3]    ; OB2   ;
+; N/A   ; None              ; 19.800 ns       ; B[3]    ; OA2   ;
+; N/A   ; None              ; 19.500 ns       ; A[3]    ; OG1   ;
+; N/A   ; None              ; 19.200 ns       ; A[3]    ; Cout3 ;
+; N/A   ; None              ; 18.700 ns       ; B[2]    ; OG1   ;
+; N/A   ; None              ; 18.400 ns       ; B[2]    ; Cout3 ;
+; N/A   ; None              ; 15.800 ns       ; B[3]    ; OG1   ;
+; N/A   ; None              ; 15.500 ns       ; B[3]    ; Cout3 ;
 +-------+-------------------+-----------------+---------+-------+
 
 
@@ -167,23 +176,23 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 26 09:38:18 2018
+    Info: Processing started: Thu May 03 09:16:13 2018
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off somador4Bits -c somador4Bits
 Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
-Info: Longest tpd from source pin "Add/Sub" to destination pin "OC" is 32.800 ns
+Info: Longest tpd from source pin "Add/Sub" to destination pin "OG2" is 33.300 ns
     Info: 1: + IC(0.000 ns) + CELL(3.500 ns) = 3.500 ns; Loc. = PIN_29; Fanout = 7; PIN Node = 'Add/Sub'
-    Info: 2: + IC(5.900 ns) + CELL(2.300 ns) = 11.700 ns; Loc. = LC4_D20; Fanout = 2; COMB Node = 'fullAdder:inst7|inst12~0'
-    Info: 3: + IC(0.600 ns) + CELL(2.300 ns) = 14.600 ns; Loc. = LC5_D20; Fanout = 2; COMB Node = 'fullAdder:inst6|inst12~0'
-    Info: 4: + IC(0.600 ns) + CELL(2.300 ns) = 17.500 ns; Loc. = LC7_D20; Fanout = 2; COMB Node = 'fullAdder:inst5|inst12~0'
-    Info: 5: + IC(0.600 ns) + CELL(2.300 ns) = 20.400 ns; Loc. = LC3_D20; Fanout = 5; COMB Node = 'fullAdder:inst4|inst'
-    Info: 6: + IC(2.200 ns) + CELL(2.300 ns) = 24.900 ns; Loc. = LC6_D17; Fanout = 1; COMB Node = '7447:inst11|83'
-    Info: 7: + IC(2.800 ns) + CELL(5.100 ns) = 32.800 ns; Loc. = PIN_19; Fanout = 0; PIN Node = 'OC'
-    Info: Total cell delay = 20.100 ns ( 61.28 % )
-    Info: Total interconnect delay = 12.700 ns ( 38.72 % )
+    Info: 2: + IC(5.900 ns) + CELL(2.300 ns) = 11.700 ns; Loc. = LC5_D19; Fanout = 2; COMB Node = 'fullAdder:inst7|inst12~0'
+    Info: 3: + IC(0.600 ns) + CELL(2.300 ns) = 14.600 ns; Loc. = LC6_D19; Fanout = 2; COMB Node = 'fullAdder:inst6|inst12~0'
+    Info: 4: + IC(0.600 ns) + CELL(2.300 ns) = 17.500 ns; Loc. = LC7_D19; Fanout = 2; COMB Node = 'fullAdder:inst5|inst12~0'
+    Info: 5: + IC(0.600 ns) + CELL(2.300 ns) = 20.400 ns; Loc. = LC1_D19; Fanout = 6; COMB Node = 'fullAdder:inst4|inst'
+    Info: 6: + IC(3.400 ns) + CELL(1.800 ns) = 25.600 ns; Loc. = LC3_B19; Fanout = 1; COMB Node = 'decodificador:inst8|Mux6~0'
+    Info: 7: + IC(2.600 ns) + CELL(5.100 ns) = 33.300 ns; Loc. = PIN_24; Fanout = 0; PIN Node = 'OG2'
+    Info: Total cell delay = 19.600 ns ( 58.86 % )
+    Info: Total interconnect delay = 13.700 ns ( 41.14 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 242 megabytes
-    Info: Processing ended: Thu Apr 26 09:38:19 2018
+    Info: Processing ended: Thu May 03 09:16:14 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
