@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Contadores">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Contadores|debounce:inst7|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_poh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Contadores|divfreq1Hz:inst10|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_toh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

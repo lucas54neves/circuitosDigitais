@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.000 ns
+From           : FLEX_PB1
+To             : debounce:inst7|flipflops[0]
+From Clock     : --
+To Clock       : GCLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 32.300 ns
+From           : contadorMod10:inst6|inst4
+To             : FLEX_DIGIT1[0]
+From Clock     : GCLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -3.900 ns
+From           : FLEX_PB1
+To             : debounce:inst7|flipflops[0]
+From Clock     : --
+To Clock       : GCLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'GCLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 51.02 MHz ( period = 19.600 ns )
+From           : divfreq1Hz:inst10|counter[1]
+To             : divfreq1Hz:inst10|counter[23]
+From Clock     : GCLK
+To Clock       : GCLK
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

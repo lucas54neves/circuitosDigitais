@@ -1,0 +1,139 @@
+|Contadores
+FLEX_DIGIT1[0] <= 7447:inst2.OG
+FLEX_DIGIT1[1] <= 7447:inst2.OF
+FLEX_DIGIT1[2] <= 7447:inst2.OE
+FLEX_DIGIT1[3] <= 7447:inst2.OD
+FLEX_DIGIT1[4] <= 7447:inst2.OC
+FLEX_DIGIT1[5] <= 7447:inst2.OB
+FLEX_DIGIT1[6] <= 7447:inst2.OA
+GCLK => divfreq1Hz:inst10.input_clk
+GCLK => debounce:inst7.clk
+FLEX_PB1 => debounce:inst7.button
+FLEX_DIGIT2[0] <= 7447:inst3.OG
+FLEX_DIGIT2[1] <= 7447:inst3.OF
+FLEX_DIGIT2[2] <= 7447:inst3.OE
+FLEX_DIGIT2[3] <= 7447:inst3.OD
+FLEX_DIGIT2[4] <= 7447:inst3.OC
+FLEX_DIGIT2[5] <= 7447:inst3.OB
+FLEX_DIGIT2[6] <= 7447:inst3.OA
+
+
+|Contadores|7447:inst2
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contadores|contadorMod10:inst6
+A <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst6.IN0
+nRST => inst18.IN1
+B <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contadores|contadorMod10:inst
+A <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst6.IN0
+nRST => inst18.IN1
+B <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contadores|divfreq1Hz:inst10
+input_clk => temporal.CLK
+input_clk => counter[23].CLK
+input_clk => counter[22].CLK
+input_clk => counter[21].CLK
+input_clk => counter[20].CLK
+input_clk => counter[19].CLK
+input_clk => counter[18].CLK
+input_clk => counter[17].CLK
+input_clk => counter[16].CLK
+input_clk => counter[15].CLK
+input_clk => counter[14].CLK
+input_clk => counter[13].CLK
+input_clk => counter[12].CLK
+input_clk => counter[11].CLK
+input_clk => counter[10].CLK
+input_clk => counter[9].CLK
+input_clk => counter[8].CLK
+input_clk => counter[7].CLK
+input_clk => counter[6].CLK
+input_clk => counter[5].CLK
+input_clk => counter[4].CLK
+input_clk => counter[3].CLK
+input_clk => counter[2].CLK
+input_clk => counter[1].CLK
+input_clk => counter[0].CLK
+output_clk <= temporal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contadores|debounce:inst7
+clk => flipflops[1].CLK
+clk => flipflops[0].CLK
+clk => counter_out[19].CLK
+clk => counter_out[18].CLK
+clk => counter_out[17].CLK
+clk => counter_out[16].CLK
+clk => counter_out[15].CLK
+clk => counter_out[14].CLK
+clk => counter_out[13].CLK
+clk => counter_out[12].CLK
+clk => counter_out[11].CLK
+clk => counter_out[10].CLK
+clk => counter_out[9].CLK
+clk => counter_out[8].CLK
+clk => counter_out[7].CLK
+clk => counter_out[6].CLK
+clk => counter_out[5].CLK
+clk => counter_out[4].CLK
+clk => counter_out[3].CLK
+clk => counter_out[2].CLK
+clk => counter_out[1].CLK
+clk => counter_out[0].CLK
+clk => result~reg0.CLK
+button => flipflops[0].DATAIN
+result <= result~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contadores|7447:inst3
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
