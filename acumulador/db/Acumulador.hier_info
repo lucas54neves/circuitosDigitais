@@ -1,13 +1,16 @@
 |Acumulador
 FLEX_DIGIT2_DP <= inst18.DB_MAX_OUTPUT_PORT_TYPE
 FLEX_PB1 => inst1.ACLR
-FLEX_PB1 => Reg:inst4.nRST
 FLEX_PB1 => Reg:inst5.nRST
+FLEX_PB1 => Reg:inst4.nRST
 GCLK => debounce:inst7.clk
 FLEX_PB2 => inst8.IN0
-FLEX_SW[0] => SomadorSubtrator:inst.nADD/SUB
-FLEX_SW[1] => ~NO_FANOUT~
-FLEX_SW[2] => ~NO_FANOUT~
+FLEX_SW[0] => 74382:inst3.S0
+FLEX_SW[0] => inst.IN0
+FLEX_SW[1] => 74382:inst3.S1
+FLEX_SW[1] => inst15.IN0
+FLEX_SW[2] => 74382:inst3.S2
+FLEX_SW[2] => inst16.IN2
 FLEX_SW[3] => ~NO_FANOUT~
 FLEX_SW[4] => Reg:inst5.D3
 FLEX_SW[5] => Reg:inst5.D2
@@ -58,84 +61,64 @@ button => flipflops[0].DATAIN
 result <= result~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Acumulador|SomadorSubtrator:inst
-Cout <= fullAdder:inst4.Cout
-A[0] => fullAdder:inst7.A
-A[1] => fullAdder:inst6.A
-A[2] => fullAdder:inst5.A
-A[3] => fullAdder:inst4.A
-nADD/SUB => inst.IN0
-nADD/SUB => inst1.IN0
-nADD/SUB => inst2.IN0
-nADD/SUB => inst3.IN0
-nADD/SUB => fullAdder:inst7.Cin
-B[0] => inst3.IN1
-B[1] => inst2.IN1
-B[2] => inst1.IN1
-B[3] => inst.IN1
-S0 <= fullAdder:inst7.S
-S1 <= fullAdder:inst6.S
-S2 <= fullAdder:inst5.S
-S3 <= fullAdder:inst4.S
+|Acumulador|74382:inst3
+CN4 <= 105.DB_MAX_OUTPUT_PORT_TYPE
+S1 => 58.IN0
+S1 => 61.IN1
+S1 => 56.IN1
+S1 => 60.IN0
+S1 => 63.IN1
+S2 => 58.IN1
+S2 => 62.IN0
+S0 => 61.IN2
+S0 => 56.IN0
+S0 => 55.IN0
+S0 => 63.IN0
+B1 => 21.IN2
+B1 => 26.IN0
+B1 => 18.IN2
+B1 => 17.IN2
+A1 => 24.IN0
+A1 => 22.IN5
+A1 => 19.IN0
+A1 => 17.IN3
+B2 => 34.IN2
+B2 => 29.IN0
+B2 => 37.IN2
+B2 => 38.IN2
+A2 => 31.IN0
+A2 => 33.IN5
+A2 => 36.IN0
+A2 => 38.IN3
+B3 => 47.IN2
+B3 => 52.IN0
+B3 => 44.IN2
+B3 => 43.IN2
+A3 => 50.IN0
+A3 => 48.IN5
+A3 => 45.IN0
+A3 => 43.IN3
+B0 => 8.IN2
+B0 => 3.IN0
+B0 => 11.IN2
+B0 => 12.IN2
+A0 => 5.IN0
+A0 => 7.IN5
+A0 => 10.IN0
+A0 => 12.IN3
+CIN => 103.IN3
+CIN => 85.IN3
+CIN => 71.IN2
+CIN => 77.IN0
+CIN => 66.IN0
+OVR <= 106.DB_MAX_OUTPUT_PORT_TYPE
+F3 <= 80.DB_MAX_OUTPUT_PORT_TYPE
+F1 <= 69.DB_MAX_OUTPUT_PORT_TYPE
+F2 <= 73.DB_MAX_OUTPUT_PORT_TYPE
+F0 <= 67.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Acumulador|SomadorSubtrator:inst|fullAdder:inst4
-S <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => ACin.IN0
-A => AB.IN0
-B => inst10.IN0
-B => BCin.IN0
-B => AB.IN1
-Cin => inst10.IN1
-Cin => ACin.IN1
-Cin => BCin.IN1
-Cout <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Acumulador|SomadorSubtrator:inst|fullAdder:inst5
-S <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => ACin.IN0
-A => AB.IN0
-B => inst10.IN0
-B => BCin.IN0
-B => AB.IN1
-Cin => inst10.IN1
-Cin => ACin.IN1
-Cin => BCin.IN1
-Cout <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Acumulador|SomadorSubtrator:inst|fullAdder:inst6
-S <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => ACin.IN0
-A => AB.IN0
-B => inst10.IN0
-B => BCin.IN0
-B => AB.IN1
-Cin => inst10.IN1
-Cin => ACin.IN1
-Cin => BCin.IN1
-Cout <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Acumulador|SomadorSubtrator:inst|fullAdder:inst7
-S <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => ACin.IN0
-A => AB.IN0
-B => inst10.IN0
-B => BCin.IN0
-B => AB.IN1
-Cin => inst10.IN1
-Cin => ACin.IN1
-Cin => BCin.IN1
-Cout <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Acumulador|Reg:inst4
+|Acumulador|Reg:inst5
 Q3 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 nRST => inst9.ACLR
 nRST => inst7.ACLR
@@ -158,7 +141,7 @@ D0 => inst4.IN0
 D0 => inst~0.IN1
 
 
-|Acumulador|Reg:inst5
+|Acumulador|Reg:inst4
 Q3 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 nRST => inst9.ACLR
 nRST => inst7.ACLR

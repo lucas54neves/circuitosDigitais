@@ -82,3 +82,4 @@ set_global_assignment -name BDF_FILE FlipFlopD.bdf
 set_global_assignment -name BDF_FILE Reg.bdf
 set_global_assignment -name BDF_FILE SomadorSubtrator.bdf
 set_global_assignment -name BDF_FILE Acumulador.bdf
+set_global_assignment -name MISC_FILE "F:/gcc113-digitais/acumulador/Acumulador.dpf"

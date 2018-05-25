@@ -19,26 +19,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-Acumulador
-# storage
-db|Acumulador.(0).cnf
-db|Acumulador.(0).cnf
-# case_insensitive
-# source_file
-Acumulador.bdf
-7bd078343d47f401f95627867abdb57
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 debounce
 # storage
 db|Acumulador.(1).cnf
@@ -125,8 +105,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Reg:inst4
 Reg:inst5
+Reg:inst4
 }
 # macro_sequence
 
@@ -145,12 +125,6 @@ fullAdder.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-SomadorSubtrator:inst|fullAdder:inst4
-SomadorSubtrator:inst|fullAdder:inst5
-SomadorSubtrator:inst|fullAdder:inst6
-SomadorSubtrator:inst|fullAdder:inst7
-}
 # macro_sequence
 
 # end
@@ -167,9 +141,6 @@ SomadorSubtrator.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-SomadorSubtrator:inst
 }
 # macro_sequence
 
@@ -1194,6 +1165,46 @@ result0
 data0
 -1
 3
+}
+# macro_sequence
+
+# end
+# entity
+74382
+# storage
+db|Acumulador.(12).cnf
+db|Acumulador.(12).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp2|quartus|libraries|others|maxplus2|74382.bdf
+6932acc840fa8aebccd434474fc58cb9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74382:inst3
+}
+# macro_sequence
+
+# end
+# entity
+Acumulador
+# storage
+db|Acumulador.(0).cnf
+db|Acumulador.(0).cnf
+# case_insensitive
+# source_file
+Acumulador.bdf
+8fe834baeb75af647f8a47ffae35a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 
