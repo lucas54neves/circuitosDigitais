@@ -1,0 +1,10 @@
+Fitter Status : Successful - Thu Jun 07 09:34:17 2018
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : multiplexador
+Top-level Entity Name : multiplexador
+Family : FLEX10K
+Device : EPF10K20RC240-4
+Timing Models : Final
+Total logic elements : 82 / 1,152 ( 7 % )
+Total pins : 22 / 189 ( 12 % )
+Total memory bits : 512 / 12,288 ( 4 % )

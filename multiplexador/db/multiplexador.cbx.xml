@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="multiplexador">
+		<CBX_INST_ENTRY INSTANCE_NAME="|multiplexador|debounce:inst6|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_poh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multiplexador|multiplex:inst2|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_9dc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
